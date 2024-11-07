@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Task Controller Servlet Definition -->
+    <servlet>
+        <servlet-name>TaskController</servlet-name>
+        <servlet-class>com.todomanagerlist.controller.TaskController</servlet-class>
+    </servlet>
+
+    <!-- Task Controller Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>TaskController</servlet-name>
+        <url-pattern>/tasks</url-pattern>
+    </servlet-mapping>
+
+    <!-- JSP Access Configuration -->
+    <!-- Direct access to JSPs in WEB-INF/views is restricted; these will be forwarded by the controller. -->
+    <!-- TaskController can forward to these JSPs using paths like "/WEB-INF/views/taskList.jsp". -->
+
+</web-app>
